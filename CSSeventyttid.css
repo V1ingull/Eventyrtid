@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden; /* Hide scrollbars */
+    width: 100%;
+    margin: 0 auto;
+    height: 0 auto;
+    font-family: 'EB Garamond', serif;
+    background-color: #1a1919;
+    color: #d1c8c8;
+}
+
+section{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    padding: 3rem;
+}
+
+article{
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+h1{
+    font-size: 6rem;
+    font-family: 'Cinzel';
+    color: black;
+    margin-top: auto;
+
+}
+
+h2{
+    font-size: 3rem;
+    color: #483249;
+}
+
+p{
+    font-size: 1.7rem;
+}
+
+.start{
+    padding: 1rem 3rem;
+}
+
+.title {
+    font-family: 'Cinzel';
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+    color: #9a0707;
+}
+
+.aDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+    font-style: italic;
+    padding: 1rem;
+    background-color: #483249;
+    border-radius: 20px;
+}
+
+a:hover{
+    background-color: #9a0707;
+}
+
+#aDiv1{
+    display: none;
+}
+
+IMG
+{
+    background-image: url();
+}
+
+button
+{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+    font-style: italic;
+    padding: 1rem;
+    background-color: #483249;
+    border-radius: 20px;
+}
+
+.BACKIMG
+{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+}
+
+.BACKIMGDEATH
+{
+    background-image: url('IMG/Sauron.png');
+}
+
+.BACKIMGSTART
+{
+    background-image: url('IMG/Start\ screen.png');
+}

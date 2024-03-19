@@ -1,0 +1,238 @@
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSSeventyttid.css">
+    <title>Choose your own adventure - 1IMB</title>
+</head>
+
+<body>
+    <!--Starten på historien-->
+    <section class="BACKIMG BACKIMGSTART"> <!--Dette bilde er laget av AI-->
+        <h1>The ruins of a kingdom</h1>
+        <div>
+            <a class="start" href="#1">Start</a>
+        </div>
+    </section>
+    <section id="1"><!--Section får id 1 slik at vi kan bli sendt hit ved hjelp av <a href="#">-->
+        <article>
+            <h2>The ruins of a kingdom</h2>
+            <p>Hello and welcome to <span class="title">The ruins of a kingdom.</span> This is a <span
+                    class="bold">choose your own adventure</span> fantasy story that you control.</p>
+            <p>This story takes place in a far away kingdom that has met some misfortune. A band of orcs attacked the
+                peaceful kingdom of Draenor. The king (you)
+                must travel land and sea to find a magical sword that can help restore the kingdom and fight of the
+                invading orcs.</p>
+            <p>Ready to become a king?</p>
+        </article>
+        <div class="aDiv">
+            <a href="#2">Yes, I'm ready!</a><!--Her blir vi sendt til section med id 2 for å skape bruker interaksjon-->
+            <a href="#dead-end1">No, I would like to wait</a>
+        </div>
+    </section>
+    <section id="2">
+        <article>
+            <h2>Chapter 1 - the escape</h2>
+            <p>My breathing was shaky, I narrowly managed to leap from the castle walls, I escaped with my life, but I
+                can’t say the same for the rest of my people. A large group of Orks swept through my kingdom, killing
+                anyone in their way. I was powerless to stop them, as regular weaponry did nothing against their thick
+                skin.</p>
+            <p>I have heard tales of a magically enchanted sword forged by Andúril, which is the only weapon that can
+                pierce their skin. Last I heard, the sword was in possession by the elves. I'll try to reach their
+                kingdom in hopes of getting their help, though it might be futile.</p>
+            <p>Regardless, every step I take is a step towards victory, towards justice...</p>
+            <p>Towards my kingdoms and peoples revival</p>
+            <p>As you run away from the castle walls you hear the war cries of the orcs. <span class="italic">Shit, I
+                    have to move fast</span></p>
+        </article>
+        <div class="aDiv">
+            <a href="#3">Run towards the woods</a>
+            <a href="#dead1">Take the kings road towards the elven city Ilalean</a>
+        </div>
+    </section>
+
+    <section id="dead1" class="BACKIMG BACKIMGDEATH">
+        <h2>You died</h2>
+        <p> I dart along the King's Road towards Ilalean, but my strides are abruptly halted by the sudden appearance of
+            a pack of orcs. With no time to react, their weapons descend upon me in a flurry of violence. Pain sears
+            through me as their blades find their mark, cutting short any hope of reaching the elven city.Gasping for
+            breath, I collapse to the ground, the weight of my crown a cruel reminder of the responsibilities I can no
+            longer fulfill. As darkness envelops me, I whisper a final prayer for my kingdom's survival, knowing that my
+            death marks the end of an era. </p>
+        <div class="aDiv">
+            <a href="#2">I'm ready now!</a>
+            <a href="#1">I'm ready, but I would like to read the intro again</a>
+        </div>
+    </section>
+
+    <section id="3">
+
+        <article>
+            <h2>You find youreself at the edge of a dark forest</h2>
+            <p>With the war cries of the orcs echoing in the distance, I desperately scan my surroundings for anything
+                that might aid me in my escape. My eyes land on a sturdy stick and a stone lying at the edge of the
+                forest. It's not much, but it's better than facing the orcs empty-handed.</p>
+            <p>CHOSE A WEAPON</p>
+        </article>
+
+        <div class="buttonDiv" id="choice1">
+            <a href="#Stone"> <button onclick="pickup('Stone', 'choice1', 'aDiv1')">Stone</button></a>
+            <a href="#STICK"> <button onclick="pickup('Sturdy stick', 'choice1', 'aDiv1')">Sturdy stick </button></a>
+
+        </div>
+
+        <!-- <div class="aDiv" id="aDiv1"> 
+            <a href="#">Test 1</a>
+            <a href="#">Test 2</a>
+        </div> -->
+
+    </section>
+
+    <section id="Stone">
+
+        <article>
+
+            <p> Snatching up the stone, I feel its weight in my hand, the rough surface providing a grim sense of
+                reassurance. It's a meager weapon, but it's all I have as I plunge into the dense foliage, the
+                adrenaline of survival coursing through my veins.Every rustle of leaves, every snap of a twig sends
+                shivers down my spine, but I press on, driven by the need to evade the orc invaders at all costs. The
+                forest offers cover and concealment, but it also holds unknown dangers lurking in the shadows. As I
+                disappear deeper into the heart of the woods, I can only hope that my makeshift weapon will be enough to
+                fend off any threats that may cross my path. With every step, I am one step closer to safety—or to the
+                mercy of fate in this unforgiving wilderness. In the distance you see the light off a farm. </p>
+
+        </article>
+        <div class="aDiv">
+            <a href="#Farm"> Go the farm</a>
+            <a href="#Woods">Continue in the woods</a>
+        </div>
+    </section>
+
+    <section id="STICK">
+
+        <article>
+
+            <p> I snatch up the stick, feeling its rough texture in my grasp. It's not the enchanted sword I had hoped
+                for, but perhaps it will buy me enough time to find safety in the woods. With determination fueling my
+                movements, I plunge into the dense foliage, the stick held tightly in my hand. Every rustle of leaves,
+                every snap of a twig sends adrenaline coursing through my veins, but I press on, driven by the need to
+                survive. The forest offers cover and concealment, but it also holds unknown dangers lurking in the
+                shadows. I steel myself for whatever may come, knowing that my kingdom's fate depends on my ability to
+                outwit the orc invaders. As I disappear deeper into the heart of the woods, I can only hope that the
+                tales of the forest's protectors prove true, and that I will find allies willing to aid me in my quest
+                to reclaim my kingdom and restore peace to the land. In the distance you see the light off a farm. </p>
+
+        </article>
+        <div class="aDiv">
+            <a href="#Farm">Go to the farm</a>
+            <a href="#Woods">Continue in the woods</a>
+        </div>
+    </section>
+
+    <section id="Farm">  
+
+        <article> 
+            <h2>  </h2>
+            <p> As I push deeper into the woods, the sounds of the orcs grow fainter behind me. After what feels like hours of frantic running, I stumble upon a small clearing. To my relief, I spot a humble farm nestled among the trees. Without hesitation, I approach cautiously, hoping to find refuge and aid.The farmer, startled by my sudden appearance, eyes me warily at first. But as I explain my plight, his expression softens with sympathy. He invites me into his home, offering me food, water, and a place to rest. Grateful for his kindness, I accept his hospitality, knowing that I am safer here than I would be alone in the wilderness.
+                As the night wears on, the farmer and I discuss the orc threat and the desperate need for allies. Though he is but a simple farmer, he pledges his support to my cause, vowing to rally his neighbors to aid in the defense of our kingdom. With newfound hope, I settle in for the night, knowing that tomorrow will bring new challenges and opportunities </p>
+    
+        </article>
+        <div class="aDiv">
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    
+    </section>
+
+    <section>  
+
+        <article id="Woods"> 
+            <h2> </h2>
+            <p> As the moon reaches its zenith, casting an ethereal glow upon the forest, I find myself stumbling upon a small clearing bathed in silver light. Relief floods through me at the sight of the open space, a brief respite from the oppressive density of the trees.But my moment of reprieve is shattered by a sudden, guttural growl echoing from the shadows. My heart seizes in my chest as I whirl around to confront the source of the sound. Emerging from the darkness, eyes gleaming with predatory intent, is a massive bear, its fur a dark silhouette against the moonlit backdrop.As the bear closes in, I frantically search for any means of escape, my mind racing with fear and determination. With no other option left, I make a split-second decision and dive behind a fallen tree, praying that it will provide enough cover to shield me from the bear's onslaught. </p>
+        </article>
+        <div class="aDiv">
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    
+    </section>
+
+    <section>  
+
+        <article> 
+            <h2> The wolfs </h2>
+            <p> As the first light of dawn creeps over the horizon, casting a soft glow upon the tranquil countryside, a sudden chill grips the air, stirring the senses with a sense of unease. The farmer and I emerge from the shelter of his humble abode, our minds abuzz with plans to rally allies and fortify our defenses against the looming threat of the orc horde.But our thoughts are shattered by a low, menacing growl that echoes through the stillness of the morning. Before we can react, a pack of wolves emerges from the shadows of the forest, their eyes gleaming with hunger and aggression. With no time to arm ourselves properly, the farmer and I stand our ground, our hearts pounding with fear.The wolves descend upon us with lightning speed, their snarls filling the air with primal fury. In the chaos of the attack, I find myself face to face with a massive alpha wolf, its fangs bared in a menacing snarl, ready to strike.With a surge of adrenaline, I grasp the sturdy stick I had found earlier, wielding it like a makeshift weapon against the oncoming onslaught. With a swift and desperate motion, I thrust the stick towards the alpha wolf, hoping against hope that it will be enough to fend off the deadly jaws.To my astonishment, the stick finds its mark, catching the alpha wolf off guard and driving deep into its side. With a pained yelp, the wolf recoils, its ferocious assault momentarily halted. Seizing the opportunity, I press my advantage, striking again and again until the alpha wolf is forced to retreat, bloodied and defeated.Breathless and trembling, I watch as the remaining wolves scatter into the depths of the forest, their hunger thwarted by our unexpected resistance. I exchange a relieved glance with the farmer, our hearts still racing with the adrenaline of battle.As we catch our breath and tend to our wounds, I am filled with gratitude for the humble stick that had become my unlikely savior. And as the first rays of sunlight break through the clouds, casting a warm glow upon the countryside once more, I am reminded that even in the face of darkness and danger, there is always hope for survival and victory. </p>
+    
+        </article>
+        <div class="aDiv">
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    
+    </section>
+
+    <!--Her starter sluttene våre-->
+    <section id="dead-end1">
+        <article>
+            <h2>Ending 1</h2>
+            <p>No worries, you can come back whenever you want!</p>
+        </article>
+        <div class="aDiv">
+            <a href="#2">I'm ready now!</a>
+            <a href="#1">I'm ready, but I would like to read the intro again</a>
+        </div>
+    </section>
+    <script>
+
+
+
+        let backpack = []
+
+        function check(item, button, div) {
+            if (backpack.includes(item)) {
+                document.getElementById(button).style.display = "none"
+                document.getElementById(div).style.display = "flex"
+            }
+        }
+
+        function Stone() {
+            backpack.push("Stone")
+            console.log(backpack)
+            check("Stone", "choice1", "aDiv1")
+        }
+
+        function Sturdy_Stick() {
+            backpack.push("Sturdy Stick")
+            console.log(backpack)
+            check()
+        }
+
+
+        function pickup(item, button, div) {
+            backpack.push(item)
+            console.log(backpack)
+            check(item, button, div)
+        }
+
+
+    </script>
+</body>
+
+<!-- <section>  
+
+    <article> 
+        <h2> </h2>
+        <p> </p>
+
+    </article>
+    <div class="aDiv">
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+
+
+
+</section> -->
+
+</html>
