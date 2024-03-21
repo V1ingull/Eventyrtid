@@ -138,9 +138,8 @@
                 As the night wears on, the farmer and I discuss the orc threat and the desperate need for allies. Though he is but a simple farmer, he pledges his support to my cause, vowing to rally his neighbors to aid in the defense of our kingdom. With newfound hope, I settle in for the night, knowing that tomorrow will bring new challenges and opportunities </p>
     
         </article>
-        <div class="aDiv">
-            <a href="#"></a>
-            <a href="#"></a>
+        <div>
+            <a href="#">NEXT</a>
         </div>
     
     </section>
@@ -151,9 +150,8 @@
             <h2> </h2>
             <p> As the moon reaches its zenith, casting an ethereal glow upon the forest, I find myself stumbling upon a small clearing bathed in silver light. Relief floods through me at the sight of the open space, a brief respite from the oppressive density of the trees.But my moment of reprieve is shattered by a sudden, guttural growl echoing from the shadows. My heart seizes in my chest as I whirl around to confront the source of the sound. Emerging from the darkness, eyes gleaming with predatory intent, is a massive bear, its fur a dark silhouette against the moonlit backdrop.As the bear closes in, I frantically search for any means of escape, my mind racing with fear and determination. With no other option left, I make a split-second decision and dive behind a fallen tree, praying that it will provide enough cover to shield me from the bear's onslaught. </p>
         </article>
-        <div class="aDiv">
-            <a href="#"></a>
-            <a href="#"></a>
+        <div>
+            <a href="#">NEXT</a>
         </div>
     
     </section>
@@ -171,6 +169,34 @@
         </div>
     
     </section>
+
+    <section>  
+
+        <article> 
+            <h2> </h2>
+            <p>  </p>
+    
+        </article>
+        <div class="aDiv">
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    
+    </section>
+
+    <article> 
+        <h2> </h2>
+        <p> </p>
+
+    </article>
+    <div class="aDiv">
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+
+
+
+</section>
 
     <!--Her starter sluttene våre-->
     <section id="dead-end1">
@@ -235,4 +261,32 @@
 
 </section> -->
 
+
+<!-- // Function to check backpack contents and scroll to the corresponding section
+function checkBackpack() {
+    let backpack = ['Stone', 'Sturdy Stick']; // Example items in the backpack, modify as needed
+
+    // Check if the backpack contains certain items
+    if (backpack.includes('Stone')) {
+        // If the backpack contains a stone, scroll to the Stone section
+        scrollToSection('Stone');
+    } else if (backpack.includes('Sturdy Stick')) {
+        // If the backpack contains a sturdy stick, scroll to the Sturdy Stick section
+        scrollToSection('STICK');
+    } else {
+        // If the backpack doesn't contain any specific item, scroll to a default section
+        scrollToSection('defaultSection');
+    }
+}
+
+// Function to scroll to a specific section by its ID
+function scrollToSection(sectionId) {
+    let section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+// Call the function when needed
+checkBackpack(); -->
 </html>
