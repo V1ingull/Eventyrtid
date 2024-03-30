@@ -32,14 +32,14 @@ article{
 h1{
     font-size: 6rem;
     font-family: 'Cinzel';
-    color: black;
+    color: pink;
     margin-top: auto;
 
 }
 
 h2{
     font-size: 3rem;
-    color: #483249;
+    color:pink;
 }
 
 p{
@@ -76,12 +76,12 @@ a{
     font-size: 1.5rem;
     font-style: italic;
     padding: 1rem;
-    background-color: #483249;
+    background-color: #ad0088;
     border-radius: 20px;
 }
 
 a:hover{
-    background-color: #9a0707;
+    background-color: #ff29a2;
 }
 
 #aDiv1{
@@ -97,10 +97,10 @@ button
 {
     text-decoration: none;
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-style: italic;
     padding: 1rem;
-    background-color: #483249;
+    background-color: #ff00a6;
     border-radius: 20px;
 }
 
