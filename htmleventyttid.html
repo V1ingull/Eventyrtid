@@ -139,7 +139,7 @@
     
         </article>
         <div>
-            <a href="#">NEXT</a>
+            <button onclick="check()"> NEXT </button>
         </div>
     
     </section>
@@ -158,9 +158,9 @@
 
     <section>  
 
-        <article> 
-            <h2> The wolfs </h2>
-            <p> As the first light of dawn creeps over the horizon, casting a soft glow upon the tranquil countryside, a sudden chill grips the air, stirring the senses with a sense of unease. The farmer and I emerge from the shelter of his humble abode, our minds abuzz with plans to rally allies and fortify our defenses against the looming threat of the orc horde.But our thoughts are shattered by a low, menacing growl that echoes through the stillness of the morning. Before we can react, a pack of wolves emerges from the shadows of the forest, their eyes gleaming with hunger and aggression. With no time to arm ourselves properly, the farmer and I stand our ground, our hearts pounding with fear.The wolves descend upon us with lightning speed, their snarls filling the air with primal fury. In the chaos of the attack, I find myself face to face with a massive alpha wolf, its fangs bared in a menacing snarl, ready to strike.With a surge of adrenaline, I grasp the sturdy stick I had found earlier, wielding it like a makeshift weapon against the oncoming onslaught. With a swift and desperate motion, I thrust the stick towards the alpha wolf, hoping against hope that it will be enough to fend off the deadly jaws.To my astonishment, the stick finds its mark, catching the alpha wolf off guard and driving deep into its side. With a pained yelp, the wolf recoils, its ferocious assault momentarily halted. Seizing the opportunity, I press my advantage, striking again and again until the alpha wolf is forced to retreat, bloodied and defeated.Breathless and trembling, I watch as the remaining wolves scatter into the depths of the forest, their hunger thwarted by our unexpected resistance. I exchange a relieved glance with the farmer, our hearts still racing with the adrenaline of battle.As we catch our breath and tend to our wounds, I am filled with gratitude for the humble stick that had become my unlikely savior. And as the first rays of sunlight break through the clouds, casting a warm glow upon the countryside once more, I am reminded that even in the face of darkness and danger, there is always hope for survival and victory. </p>
+        <article id="WolfV"> 
+            <h2> THE WOLFS </h2>
+            <p> Amidst dawn's gentle embrace, some farmers and I brace for battle against an orc horde, only to be ambushed by hungry wolves. Armed with a mere stick, I confront the alpha wolf, striking with desperate resolve. Miraculously, my makeshift weapon proves effective, driving the alpha back and dispersing the pack. With hearts racing and wounds tended, we emerge victorious, grateful for the unlikely heroism of a humble stick, and renewed in our belief that even in darkness, hope prevails. </p>
     
         </article>
         <div class="aDiv">
@@ -172,9 +172,9 @@
 
     <section>  
 
-        <article> 
-            <h2> </h2>
-            <p>  </p>
+        <article id="WolfD"> 
+            <h2> THE WOLFS </h2>
+            <p> As the first light of dawn bathes the land in a gentle glow, a sense of impending danger stirs in the air. From the depths of the forest emerges a pack of wolves, their sleek forms moving with silent purpose as they set their sights on the unsuspecting farmer and me. With no time to arm ourselves, I frantically search for anything that might aid in our defense. My gaze falls upon a sturdy stone lying at the edge of the clearing, a relic of my earlier escape from the castle walls. Without hesitation, I snatch up the stone, feeling its reassuring weight in my hand as I prepare to face the oncoming threat. The alpha wolf, its eyes burning with primal hunger, leads the charge, its pack close behind. With a fierce resolve, I hurl the stone towards the alpha, my aim true as it strikes the beast with a resounding thud. For a moment, the wolf falters, giving the farmer and me a fleeting advantage. But our victory is short-lived as the pack closes in, their fangs bared and their growls filling the air with menace. Despite our valiant efforts, the wolves overwhelm us, their savage onslaught proving too much to bear. As darkness descends and the sounds of the forest fade into silence, I feel the cold embrace of death creeping ever closer. With one final breath, I cling to the memory of the stone in my hand, a symbol of defiance in the face of insurmountable odds. Though my life may be extinguished, I take solace in the knowledge that my sacrifice may yet inspire others to stand against the darkness that threatens to engulf our land. And as the world fades away, I find comfort in the thought that even the smallest of stones can wield the power to shape the course of destiny. </p>
     
         </article>
         <div class="aDiv">
@@ -215,32 +215,42 @@
 
         let backpack = []
 
-        function check(item, button, div) {
-            if (backpack.includes(item)) {
-                document.getElementById(button).style.display = "none"
-                document.getElementById(div).style.display = "flex"
+        function check() {
+            if (backpack.includes("Stone")) {
+                goToAnchor('WolfD')
             }
+            else 
+            {
+                goToAnchor('WolfV')
+            }
+
         }
 
-        function Stone() {
+        function Stone() 
+        {
             backpack.push("Stone")
             console.log(backpack)
-            check("Stone", "choice1", "aDiv1")
         }
 
-        function Sturdy_Stick() {
+        function Sturdy_Stick() 
+        {
             backpack.push("Sturdy Stick")
             console.log(backpack)
-            check()
         }
 
 
-        function pickup(item, button, div) {
+        function pickup(item)
+        {
             backpack.push(item)
             console.log(backpack)
-            check(item, button, div)
         }
 
+        function goToAnchor(anchor) 
+        {
+            var loc = document.location.toString().split('#')[0];
+            document.location = loc + '#' + anchor;
+            return false;
+        }
 
     </script>
 </body>
