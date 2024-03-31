@@ -77,8 +77,8 @@
         </article>
 
         <div id="choice1">
-            <a href="#Stone"> <button onclick="pickup('Stone')">Stone</button></a>
-            <a href="#STICK"> <button onclick="pickup('Sturdy stick')">Sturdy stick </button></a>
+            <button onclick="pickup('Stone');goToAnchor('Stone')">Stone</button>
+            <button onclick="pickup('Sturdy stick');goToAnchor('STICK')">Sturdy stick </button>
 
         </div>
 
@@ -213,25 +213,14 @@
 
         }
 
-        function Stone() 
-        {
-            backpack.push("Stone")
-            console.log(backpack)
-        }
-
-        function Sturdy_Stick() 
-        {
-            backpack.push("Sturdy Stick")
-            console.log(backpack)
-        }
-
-
         function pickup(item)
         {
+            let backpack = []
             backpack.push(item)
             console.log(backpack)
         }
 
+        //stackoverflov
         function goToAnchor(anchor) 
         {
             var loc = document.location.toString().split('#')[0];
