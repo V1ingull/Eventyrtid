@@ -32,14 +32,14 @@ article{
 h1{
     font-size: 6rem;
     font-family: 'Cinzel';
-    color: pink;
+    color: gold;
     margin-top: auto;
 
 }
 
 h2{
     font-size: 3rem;
-    color:pink;
+    color:gold;
 }
 
 p{
@@ -76,12 +76,12 @@ a{
     font-size: 1.5rem;
     font-style: italic;
     padding: 1rem;
-    background-color: #ad0088;
+    background-color: #FFD700;
     border-radius: 20px;
 }
 
 a:hover{
-    background-color: #ff29a2;
+    background-color: #fedd22;
 }
 
 #aDiv1{
@@ -100,7 +100,7 @@ button
     font-size: 1.5rem;
     font-style: italic;
     padding: 1rem;
-    background-color: #ad0088;
+    background-color: #FFD700;
     border-radius: 20px;
 }
 
